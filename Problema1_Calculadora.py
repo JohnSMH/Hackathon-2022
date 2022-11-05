@@ -17,7 +17,7 @@ def Calculadora():
                 num1 = input()
                 print("Ingrese el segundo numero")
                 num2 = input()
-                print("El resultado es: ", bin(int(num1, 2) + int(num2, 2)))
+                print("El resultado es: ", (bin(int(num1, 2) + int(num2, 2))).replace("0b", ""))
             elif base == "2":
                 print("Ingrese el primer numero")
                 num1 = input()
@@ -29,14 +29,14 @@ def Calculadora():
                 num1 = input()
                 print("Ingrese el segundo numero")
                 num2 = input()
-                print("El resultado es: ", hex(int(num1, 16) + int(num2, 16)))
+                print("El resultado es: ", (hex(int(num1, 16) + int(num2, 16))).replace("0x", ""))
         elif opcion == "2":
             if base == "1":
                 print("Ingrese el primer numero")
                 num1 = input()
                 print("Ingrese el segundo numero")
                 num2 = input()
-                print("El resultado es: ", bin(int(num1, 2) - int(num2, 2)))
+                print("El resultado es: ", (bin(int(num1, 2) - int(num2, 2))).replace("0b", ""))
             elif base == "2":
                 print("Ingrese el primer numero")
                 num1 = input()
@@ -48,8 +48,12 @@ def Calculadora():
                 num1 = input()
                 print("Ingrese el segundo numero")
                 num2 = input()
-                print("El resultado es: ", hex(int(num1, 16) - int(num2, 16)))
+                print("El resultado es: ", (hex(int(num1, 16) - int(num2, 16))).replace("0x", ""))
+            else:
+                print("Opcion de base no valida")
+        else:
+            print("Opcion de operacion no valida")
     except:
-        print("Error volver a intentar")
+        print("Error en los valores ingresados volver a intentar")
 
 Calculadora()
