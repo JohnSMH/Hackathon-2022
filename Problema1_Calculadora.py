@@ -35,5 +35,3 @@ def Calculadora():
             print("Opcion de operacion no valida")
     except:
         print("Error en los valores ingresados volver a intentar")
-
-Calculadora()
