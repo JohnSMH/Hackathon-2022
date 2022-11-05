@@ -13,6 +13,9 @@ def MenuPrincipal():
         print("4. Porciones")
         print("Seleccione la opcion deseada")
         opcion = input()
+        print()
+        print('=====================================================')
+        print()
         if opcion == "1":
             Problema1_Calculadora.Calculadora()
         elif opcion == "2":
@@ -25,9 +28,13 @@ def MenuPrincipal():
             Problema4_Porciones.Porciones()
         else:
             print("Opcion no valida")
+        print()
         print("Desea continuar? (S/N)")
         respuesta = input()
         if respuesta == "N":
             condicion = False
+        print()
+        print('=====================================================')
+        print()
 
 MenuPrincipal()
